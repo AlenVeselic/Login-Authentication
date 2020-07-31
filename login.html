@@ -8,8 +8,10 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link href="" rel="stylesheet">
+<script src="js/Auth.js">
+</script>
 </head>
-<body>
+<body >
 
     <div id="users">
         |Dude|
@@ -23,14 +25,17 @@
 
         <div class="content">
             <fieldset>
-            <form action="" method="">
-                Username:<input type="text" name="name"> <br>
-                Password: <input type="password" name="pwd"> <br>
-                <p><a href="register.html">Forgot your password?</a></p>
-                <input type="submit" name="login" value="Login">
-            </form>
-        </fieldset>
-
+                <form action="" method="POST" >
+                    Username:<input type="text" name="name"> <br>
+                    Password: <input type="password" name="pwd"> <br>
+                    <p>
+                        <a href="register.html">Forgot your password?</a>
+                    </p>
+                    <input type="submit" name="login" value="Login" onclick="validateParams();return false">
+                </form>
+            </fieldset>
+        
+        <p id="bleh">ks</p>
             
         </div>
     </div>
