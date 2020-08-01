@@ -25,13 +25,13 @@
 
         <div class="content">
             <fieldset>
-                <form action="" method="POST" >
+                <form action="" method="POST" id="loginForm" onsubmit="validateParams(); return false" >
                     Username:<input type="text" name="name"> <br>
                     Password: <input type="password" name="pwd"> <br>
                     <p>
-                        <a href="register.html">Forgot your password?</a>
+                        <a href="register.html">Are you new?</a>
                     </p>
-                    <input type="submit" name="login" value="Login" onclick="validateParams();return false">
+                    <input type="submit" name="login" value="Login" >
                 </form>
             </fieldset>
         
