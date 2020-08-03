@@ -8,21 +8,31 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link href="" rel="stylesheet">
+<script src="js/Auth.js"></script>
 </head>
 <body>
+<div class="back">
+    <a href="login.html">
+        <p> <-- </p>
+    </a>
+</div>
 
 
     <div class="wrap">
         
         <div class="content">
     
-            <form action="" method="">
+            <form action="" method="POST" id="registerForm" onsubmit="addUser();return false">
                 Username:<input type="text" name="name"> <br>
                 Password: <input type="password" name="pwd"> <br>
-                Verify Password: <input type="password" name="vPwd"><br>
-                <input type="submit" name="login" value="Register">
+                Verify Password: <input type="password" name="vPwd" onblur="verifyPassword();return false"><br>
+                <input type="submit" name="reg" value="Register">
             </form>
-            
+
+            <!--
+            <button name="tt" onclick="setValue(69);return false">Clicky clicky</button>
+            <button name="tg" onclick="getValue();return false">Clickity clooky</button>
+            -->
         </div>
     </div>
 
