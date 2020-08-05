@@ -25,14 +25,16 @@ function getValue(){
 */ 
 
 function addUser(){
-    /*Fresh=false;
+    /*
+    Fresh=false;
     if(sessionStorage.getItem("users")!=null && !Fresh){
         userBase=sessionStorage.getItem("users");
     }else{
         fresh=true;
-    }*/
+    }
+    */
 
-    alert(sessionStorage.users[0].name);
+    //alert(sessionStorage.users[0].name);
 
 
 
@@ -62,8 +64,9 @@ function addUser(){
     form.parentNode.insertBefore(warn,form.nextSibling);
 }
 
-    sessionStorage.setItem("users",userBase);
+    sessionStorage.setItem("users",JSON.stringify(userBase));
 }
+
 
 function verifyPassword(){
     password= document.getElementsByName("pwd")[0].value;
@@ -82,7 +85,7 @@ function verifyPassword(){
 function validateParams(){
     Fresh=false;
     if(sessionStorage.getItem("users")!=null && !Fresh){
-    userBase=sessionStorage("users");
+    userBase=JSON.parse(sessionStorage.getItem("users"));
 }else{
     Fresh=true;
 }
