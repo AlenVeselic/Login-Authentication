@@ -7,14 +7,15 @@
 <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
 <meta name="description" content="">
 <meta name="keywords" content="">
-<link href="" rel="stylesheet">
+<link href="css/login.css" type="text/css" rel="stylesheet">
 <script src="js/Auth.js">
 </script>
 </head>
 <body >
 
     <div id="users">
-        |Dude|
+        <button onclick="generateUserTable(document.getElementById('usrtbl'))">|Dude|</button>
+        <div id="usrtbl"></div>
     </div>
     
     <div class="info">
@@ -25,13 +26,14 @@
 
         <div class="content">
             <fieldset>
+                <legend>LOGIN</legend>
                 <form action="" method="POST" id="loginForm" onsubmit="validateParams(); return false" >
                     Username:<input type="text" name="name"> <br>
                     Password: <input type="password" name="pwd"> <br>
                     <p>
                         <a href="register.html">Are you new?</a>
                     </p>
-                    <input type="submit" name="login" value="Login" >
+                    <input type="submit" name="login" value="Login" id="logBtn" >
                 </form>
             </fieldset>
         

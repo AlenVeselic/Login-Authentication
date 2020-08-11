@@ -24,6 +24,24 @@ function getValue(){
 
 */ 
 
+function generateUserTable(where){
+
+
+
+    warn=document.createElement("table");
+    warn.innerHTML="<tbody>";
+    for(gg=0;gg<userBase.length;gg++){
+
+        warn.innerHTML+="<tr><td>"+userBase[gg].name+"</td><td>"+userBase[gg].password+"</td></tr>";
+        
+    }
+
+    warn.innerHTML+="</tbody>";
+    
+    where.appendChild(warn);
+    //where.insertBefore(warn,form);
+}
+
 function addUser(){
     /*
     Fresh=false;
@@ -39,7 +57,8 @@ function addUser(){
 
 
     form=document.getElementById("registerForm");
-    warn=document.createElement("table");
+    generateUserTable(form.parentNode);
+    /*warn=document.createElement("table");
     warn.innerHTML="<tbody>";
     for(gg=0;gg<userBase.length;gg++){
 
@@ -50,7 +69,7 @@ function addUser(){
     warn.innerHTML+="</tbody>";
 
     form.parentNode.insertBefore(warn,form);
-
+    */
     username=document.getElementsByName("name")[0].value;
     password= document.getElementsByName("pwd")[0].value;
 

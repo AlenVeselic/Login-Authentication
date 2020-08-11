@@ -7,7 +7,7 @@
 <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
 <meta name="description" content="">
 <meta name="keywords" content="">
-<link href="" rel="stylesheet">
+<link href="css/register.css" type="text/css" rel="stylesheet">
 <script src="js/Auth.js"></script>
 </head>
 <body>
@@ -23,9 +23,9 @@
         <div class="content">
     
             <form action="" method="POST" id="registerForm" onsubmit="addUser();return false">
-                Username:<input type="text" name="name"> <br>
-                Password: <input type="password" name="pwd"> <br>
-                Verify Password: <input type="password" name="vPwd" onblur="verifyPassword();return false"><br>
+                <p>Username:<input type="text" name="name"> <br></p>
+                <p>Password: <input type="password" name="pwd"> <br></p>
+                <p id="vP">Verify Password: <input type="password" name="vPwd" onblur="verifyPassword();return false"><br></p>
                 <input type="submit" name="reg" value="Register">
             </form>
 
