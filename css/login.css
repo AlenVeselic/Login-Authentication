@@ -10,22 +10,76 @@ body{
     background-color: rgb(96, 24, 124);
 }
 
-.content{
-    display:block;
-    width:500px;
-    margin: auto;
-}
-
-legend{
+.center{
     margin:auto;
 }
 
+.titleBox{
+
+    background-color: lightblue;
+    width:60vw;
+    height:20vh;
+
+}
+
+.title{
+
+    background-color: beige;
+    width:40vw;
+    height:10vh;
+
+}
+
+
+.main{
+    overflow:auto;
+    width:50vw;
+    min-height:90vh;
+    height:auto;
+    margin: auto;
+}
+
+.users{
+    display:inline;
+position:absolute;
+left:0px;
+
+}
+
+.info{
+    display:inline;
+position:absolute;
+right:0px;
+
+}
+
+legend{
+    border: 3px solid black;
+    margin:auto;
+}
+
+
+
+.content{
+    background-color:rgb(68, 9, 92);
+    display:block;
+    width:50vw;
+    min-height:80vh;
+    height:auto;
+    margin: auto;
+}
 
 p{
     display:inline;
 }
 p#vP{
     margin-left: -45px;
+}
+
+fieldset{
+    margin:auto;
+    background-color: rgb(129, 46, 161);
+    width:50%;
 }
 
 form{
@@ -36,4 +90,13 @@ form{
 form a{
     display:block;
     color:turquoise;
+}
+
+.b_tail{
+    float:left;
+    width: 0;
+	height: 0;
+	border-left: 8.33vw solid transparent;
+	border-right: 8.33vw solid transparent;
+	border-top: 16.535vw solid #555;
 }
