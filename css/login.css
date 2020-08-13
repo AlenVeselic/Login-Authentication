@@ -6,11 +6,21 @@
  * @version 1.0.0
  */
 
-body{
+html,body{
     background-color: rgb(96, 24, 124);
+    margin:0;
+    padding:0;
 }
 .wrap{
-    margin-top:0px;
+    margin:0;
+    display:inline-block;
+    overflow:auto;
+    background-color: lavenderblush;
+    min-width:50vw;
+    width:100%;
+    min-height:90vh;
+    height:auto;
+    
 }
 
 .center{
@@ -43,16 +53,12 @@ body{
 }
 
 #users{
-    display:inline-block;
-position:absolute;
-overflow:auto;
-height:auto;
-min-height:50px;
-width:auto;
-min-width:100px;
-left:50px;
-background-color: bisque;
 
+display:inline-block;
+position:absolute;
+left:50px;
+top:50px;
+background-color: bisque;
 
 }
 
@@ -68,9 +74,12 @@ background-color: bisque;
 
 
 .info{
+
     display:inline;
-position:absolute;
-right:0px;
+    position:absolute;
+    right:50px;
+    top:50px;
+    background-color: khaki;
 
 }
 
