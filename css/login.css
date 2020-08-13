@@ -9,6 +9,9 @@
 body{
     background-color: rgb(96, 24, 124);
 }
+.wrap{
+    margin-top:0px;
+}
 
 .center{
     margin:auto;
@@ -39,12 +42,30 @@ body{
     margin: auto;
 }
 
-.users{
-    display:inline;
+#users{
+    display:inline-block;
 position:absolute;
-left:0px;
+overflow:auto;
+height:auto;
+min-height:50px;
+width:auto;
+min-width:100px;
+left:50px;
+background-color: bisque;
+
 
 }
+
+.users button{
+    position:absolute;
+    left:500px;
+}
+
+.usrtable{
+    position:absolute;
+    display:inline;
+}
+
 
 .info{
     display:inline;
