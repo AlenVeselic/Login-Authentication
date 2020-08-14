@@ -26,9 +26,12 @@ function getValue(){
 
 function generateUserTable(where){
 
+    Fresh=false;
 
+    refreshUsers(Fresh);
 
     warn=document.createElement("table");
+    warn.classList.add("tablay");
     warn.innerHTML="<tbody>";
     for(gg=0;gg<userBase.length;gg++){
 
@@ -38,19 +41,22 @@ function generateUserTable(where){
 
     warn.innerHTML+="</tbody>";
     
-    where.appendChild(warn);
+    Eli=document.getElementsByClassName("tablay")[0];
+
+    if(Eli){
+        Eli.replaceWith(warn);
+    }else{
+        where.append(warn);
+    }
+
+    
+    
     //where.insertBefore(warn,form);
 }
 
 function addUser(){
-    /*
-    Fresh=false;
-    if(sessionStorage.getItem("users")!=null && !Fresh){
-        userBase=sessionStorage.getItem("users");
-    }else{
-        fresh=true;
-    }
-    */
+    
+
 
     //alert(sessionStorage.users[0].name);
 
@@ -84,6 +90,8 @@ function addUser(){
 }
 
     sessionStorage.setItem("users",JSON.stringify(userBase));
+    Fresh=false;
+    Fresh=refreshUsers(Fresh);
 }
 
 
@@ -102,37 +110,66 @@ function verifyPassword(){
 }
 
 function validateParams(){
-    Fresh=false;
-    if(sessionStorage.getItem("users")!=null && !Fresh){
-    userBase=JSON.parse(sessionStorage.getItem("users"));
-}else{
-    Fresh=true;
-}
+    
+    
     username=document.getElementsByName("name")[0].value;
     password= document.getElementsByName("pwd")[0].value;
 
     match=false;
 
-  
+    check=document.getElementsByClassName("Waning")[0];
+    dest=document.getElementById("loginForm");
+
+    warn=document.createElement("p");
+    warn.classList.add("Waning");
+
     for (x=0;x<userBase.length;x++){
         if(username==userBase[x].name){
             if(userBase[x].password==password){
                 
-                document.getElementById("loginForm").innerHTML+="Welcome!";
+                wewe=document.createTextNode("Welcome!");
+                warn.appendChild(wewe);
+
+                InsertorReplace(check,warn,dest);
+
                 match=true;
                 
             }else{
-                document.getElementById("loginForm").innerHTML+="Wrong password!!!";
+                wewe=document.createTextNode("Wrong password!!!");
+                warn.appendChild(wewe);
+
+                InsertorReplace(check,warn,dest);
+
                 match=true;
                 
             }
         }else if(x==userBase.length-1 && !match){
-            document.getElementById("loginForm").innerHTML+="<p> An account with this username doesn't exist. Would you like to create one?</p>";
+            wewe=document.createTextNode("An account with this username doesn't exist. Would you like to create one?");
+            warn.appendChild(wewe);
+
+            InsertorReplace(check,warn,dest);
+
+
         }
     }
 
     document.getElementById("bleh").innerHTML="You entered: <br>" + "Username: "+username+"<br> Password: "+ password + "<br> Number of users: " + userBase.length;
 };
+
+function newPage(){
+    Fresh=false;
+    refreshUsers(Fresh);
+}
+
+function refreshUsers(Fresh){
+
+    if(sessionStorage.getItem("users")!=null && !Fresh){
+    userBase=JSON.parse(sessionStorage.getItem("users"));
+}else{
+    return true;
+}
+
+}
 
 function userExists(username){
 
@@ -144,4 +181,14 @@ function userExists(username){
     }
 
     return match;
+}
+
+function InsertorReplace(ref,value,el){
+
+if(ref){
+    ref.replaceWith(value);
+}else{
+    el.appendChild(value);
+}
+
 }
