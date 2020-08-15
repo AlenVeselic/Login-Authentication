@@ -40,8 +40,10 @@ input[type=text],input[type=password]{
 }
 
 .title{
-
+    position:relative;
+    top:25%;
     background-color: beige;
+    
     width:40vw;
     height:10vh;
 
@@ -54,6 +56,12 @@ input[type=text],input[type=password]{
     min-height:90vh;
     height:auto;
     margin: auto;
+    background-color: lightblue;
+}
+
+.back{
+    width:75vw;
+    background-color:orange;
 }
 
 #users{
@@ -63,6 +71,87 @@ position:absolute;
 left:50px;
 top:50px;
 background-color: bisque;
+
+}
+.triBase{
+    position:absolute;
+
+    top:0px;
+
+    width:0;
+    height:0;
+}
+.triLeft{
+
+    
+    left:0px;
+    
+
+    
+
+    border-bottom:90px solid transparent;
+    border-right: 90px solid transparent;
+
+    border-left:200px solid black;
+    border-top:90px solid black;
+
+}
+
+.triRight{
+
+    right:0px;
+
+    border-bottom:90px solid transparent;
+    border-left:90px solid transparent;
+
+    border-top:90px solid black;
+    border-right:200px solid black;
+
+}
+
+.lSideB{
+
+left:13.35vw;
+
+border-top:60px solid black;
+border-right:60px solid black;
+
+border-bottom:60px solid transparent;
+border-left:60px solid transparent;  
+
+}
+.lSideS{
+
+    left:13.35vw;
+
+    border-top:100px solid black;
+    border-right:60px solid black;
+    
+    border-bottom:60px solid transparent;
+    border-left:60px solid transparent;  
+}
+
+.rSideB{
+
+    right:13.35vw;
+
+    border-top:60px solid black;
+    border-right:60px solid transparent;
+    
+    border-bottom:60px solid transparent;
+    border-left:60px solid black;
+
+}
+
+.rSideS{
+
+    right:13.35vw;
+
+    border-top:100px solid black;
+    border-right:60px solid transparent;
+    
+    border-bottom:60px solid transparent;
+    border-left:60px solid black;
 
 }
 
