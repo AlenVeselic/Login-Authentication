@@ -15,7 +15,7 @@ html,body{
     margin:0;
     display:inline-block;
     overflow:auto;
-    background-color: lavenderblush;
+    background-color: rgb(88, 66, 25);
     min-width:50vw;
     width:100%;
     min-height:90vh;
@@ -56,15 +56,17 @@ input[type=text],input[type=password]{
     min-height:90vh;
     height:auto;
     margin: auto;
-    background-color: lightblue;
+    background-color: rgb(155, 144, 124);
 }
 
 .back{
     width:75vw;
-    background-color:orange;
+    background-color:rgb(155, 144, 124);
 }
 
 #users{
+
+    z-index: 1;
 
 display:inline-block;
 position:absolute;
@@ -83,49 +85,53 @@ background-color: bisque;
 }
 .triLeft{
 
+    z-index: 1;
     
     left:0px;
     
 
     
 
-    border-bottom:90px solid transparent;
-    border-right: 90px solid transparent;
+    border-bottom:175px solid transparent;
+    border-right: 175px solid transparent;
 
-    border-left:200px solid black;
-    border-top:90px solid black;
+    border-left:250px solid rgb(121, 16, 16);
+    border-top:75px solid rgb(121, 16, 16);
 
 }
 
 .triRight{
+    
+    z-index: 1;
 
     right:0px;
 
-    border-bottom:90px solid transparent;
-    border-left:90px solid transparent;
+    border-bottom:175px  solid transparent;
+    border-left:175px  solid transparent;
 
-    border-top:90px solid black;
-    border-right:200px solid black;
+    border-top:75px solid rgb(121, 16, 16);
+    border-right:250px solid rgb(121, 16, 16);
 
 }
 
 .lSideB{
 
-left:13.35vw;
+left:9.75vw;
 
-border-top:60px solid black;
-border-right:60px solid black;
 
-border-bottom:60px solid transparent;
-border-left:60px solid transparent;  
+border-top:60px solid transparent;
+border-right:40px solid rgb(85, 20, 128);
+
+border-bottom:127px solid rgb(85, 20, 128);
+border-left:150px solid transparent;  
 
 }
 .lSideS{
 
-    left:13.35vw;
+    left:12.3vw;
 
-    border-top:100px solid black;
-    border-right:60px solid black;
+    border-top:120px solid rgb(125, 52, 143);
+    border-right:80px solid rgb(125, 52, 143);
     
     border-bottom:60px solid transparent;
     border-left:60px solid transparent;  
@@ -133,25 +139,29 @@ border-left:60px solid transparent;
 
 .rSideB{
 
-    right:13.35vw;
+    /*transform:scaley(2);
+    */
+    right:9.75vw;
 
-    border-top:60px solid black;
-    border-right:60px solid transparent;
+    border-top:60px solid transparent;
+    border-right:150px solid transparent;
     
-    border-bottom:60px solid transparent;
-    border-left:60px solid black;
+    border-bottom:127px solid rgb(85, 20, 128);
+    border-left:40px solid rgb(85, 20, 128);
 
 }
 
 .rSideS{
 
-    right:13.35vw;
+    
 
-    border-top:100px solid black;
+    right:12.3vw;
+
+    border-top:120px solid rgb(125, 52, 143);
     border-right:60px solid transparent;
     
     border-bottom:60px solid transparent;
-    border-left:60px solid black;
+    border-left:80px solid rgb(125, 52, 143);
 
 }
 
@@ -167,6 +177,8 @@ border-left:60px solid transparent;
 
 
 .info{
+
+    z-index: 1;
 
     display:inline;
     position:absolute;
