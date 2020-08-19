@@ -7,6 +7,8 @@ userBase.push(user);
 userBase.push(user2);
 userBase.push(user3);
 
+exists=false;
+
 
 /*
 This code, along with the buttons on the pages, was used to test how session storage works
@@ -24,9 +26,24 @@ function getValue(){
 
 */ 
 
+function toggleVis(id){
+    el=document.getElementById(id);
+    if(el.style.display === "none" ){
+        el.style.display="block";
+    }else{
+        el.style.display="none";
+    }
+}
+
 function generateUserTable(where){
 
     Fresh=false;
+
+    Eli=document.getElementsByClassName("tablay")[0];
+
+    if(Eli)
+    toggleVis("usrtbl");
+    
 
     refreshUsers(Fresh);
 
@@ -41,13 +58,14 @@ function generateUserTable(where){
 
     warn.innerHTML+="</tbody>";
     
-    Eli=document.getElementsByClassName("tablay")[0];
+    
 
     if(Eli){
         Eli.replaceWith(warn);
     }else{
         where.append(warn);
     }
+
 
     
     

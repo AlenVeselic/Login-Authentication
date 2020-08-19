@@ -64,17 +64,7 @@ input[type=text],input[type=password]{
     background-color:rgb(155, 144, 124);
 }
 
-#users{
 
-    z-index: 1;
-
-display:inline-block;
-position:absolute;
-left:50px;
-top:50px;
-background-color: bisque;
-
-}
 .triBase{
     position:absolute;
 
@@ -114,9 +104,23 @@ background-color: bisque;
 
 }
 
+.cTest{
+    position:absolute;
+
+    left:12.10vw;
+
+    overflow:hidden;
+
+    z-index: 3;
+    height:187px;
+    width:143.19px;
+    background-color: chartreuse;
+}
+
 .lSideB{
 
-left:9.75vw;
+/*left:9.75vw;*/
+left:-2.5vw;
 
 
 border-top:60px solid transparent;
@@ -128,7 +132,8 @@ border-left:150px solid transparent;
 }
 .lSideS{
 
-    left:12.3vw;
+    /*left:12.3vw;*/ left:0.55vw; 
+                    
 
     border-top:120px solid rgb(125, 52, 143);
     border-right:80px solid rgb(125, 52, 143);
@@ -136,6 +141,8 @@ border-left:150px solid transparent;
     border-bottom:60px solid transparent;
     border-left:60px solid transparent;  
 }
+
+
 
 .rSideB{
 
@@ -165,14 +172,32 @@ border-left:150px solid transparent;
 
 }
 
-.users button{
-    position:absolute;
-    left:500px;
+#users{
+
+    z-index: 1;
+
+display:inline-block;
+position:absolute;
+left:50px;
+top:50px;
+/*background-color: bisque;*/
+
 }
 
-.usrtable{
+#users button{
+    
+
+    background-color: transparent;
+    border:none;
+}
+
+#usrtbl{
     position:absolute;
     display:inline;
+}
+
+#infoTxt{
+    position:absolute;
 }
 
 
@@ -184,7 +209,7 @@ border-left:150px solid transparent;
     position:absolute;
     right:50px;
     top:50px;
-    background-color: khaki;
+    /*background-color: khaki;*/
 
 }
 
@@ -232,5 +257,5 @@ form a{
 	height: 0;
 	border-left: 8.334vw solid transparent;
 	border-right: 8.334vw solid transparent;
-	border-top: 16.535vw solid rgb(83, 15, 85);
+	border-top: 16.535vw solid rgb(68, 9, 92);
 }
