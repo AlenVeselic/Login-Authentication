@@ -49,6 +49,38 @@ input[type=text],input[type=password]{
 
 }
 
+.outer{
+
+    height:100%;
+    width:90%;
+
+    background-color: darkcyan;
+
+}
+
+.mitte{
+    height:100%;
+    width:90%;
+
+    background-color: darkgreen;
+}
+
+.inne{
+    height:100%;
+    width:90%;
+
+
+    background-color: darkred;
+
+}
+
+h3{
+    display:block;
+    margin:auto;
+    padding-top: 5%;
+    text-align:center;
+}
+
 
 .main{
     overflow:auto;
@@ -107,20 +139,28 @@ input[type=text],input[type=password]{
 .cTest{
     position:absolute;
 
-    left:12.10vw;
+    
 
     overflow:hidden;
 
-    z-index: 3;
+    z-index: 0;
     height:187px;
-    width:143.19px;
-    background-color: chartreuse;
+    width:144px;
+    /*background-color: chartreuse;*/
+}
+
+.lDivpos{
+    left:12.10vw;
+}
+
+.rDivPos{
+    right:12.05vw;
 }
 
 .lSideB{
 
 /*left:9.75vw;*/
-left:-2.5vw;
+left:-2.438vw;
 
 
 border-top:60px solid transparent;
@@ -147,8 +187,9 @@ border-left:150px solid transparent;
 .rSideB{
 
     /*transform:scaley(2);
-    */
-    right:9.75vw;
+    
+    right:9.75vw;*/
+
 
     border-top:60px solid transparent;
     border-right:150px solid transparent;
@@ -162,7 +203,8 @@ border-left:150px solid transparent;
 
     
 
-    right:12.3vw;
+    /*right:12.3vw;*/
+
 
     border-top:120px solid rgb(125, 52, 143);
     border-right:60px solid transparent;
@@ -193,11 +235,12 @@ top:50px;
 
 #usrtbl{
     position:absolute;
-    display:inline;
+    display:block;
 }
 
 #infoTxt{
     position:absolute;
+    display:block;
 }
 
 
