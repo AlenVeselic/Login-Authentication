@@ -235,12 +235,19 @@ top:50px;
 
 #usrtbl{
     position:absolute;
-    display:block;
+    background-color:rgb(207, 120, 120);
+    top:70px;
+    border:solid 1px white;
+    display:none;
+}
+
+#usrtbl td{
+    border-bottom:solid 1px white;
 }
 
 #infoTxt{
     position:absolute;
-    display:block;
+    display:none;
 }
 
 
