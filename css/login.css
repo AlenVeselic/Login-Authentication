@@ -237,12 +237,17 @@ top:50px;
     position:absolute;
     background-color:rgb(207, 120, 120);
     top:70px;
-    border:solid 1px white;
+    /*border:solid 1px white;*/
     display:none;
 }
 
-#usrtbl td{
+#usrtbl tr td{
     border-bottom:solid 1px white;
+}
+
+#usrbl tr:last-child td{
+    border-bottom:none;
+
 }
 
 #infoTxt{
@@ -264,8 +269,8 @@ top:50px;
 }
 
 legend{
-    border: 3px solid black;
-    background-color: lightcoral;
+    border: 1px solid purple;
+    background-color: rgb(192, 51, 192);
     margin:auto;
 }
 
@@ -287,7 +292,7 @@ p{
 fieldset{
     margin:auto;
     background-color: rgb(129, 46, 161);
-    border-color: lightgreen;
+    border-color: rgb(116, 26, 116);
     width:50%;
 }
 
