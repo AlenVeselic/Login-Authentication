@@ -83,7 +83,7 @@ h3{
 
 
 .main{
-    overflow:auto;
+    /*overflow:auto;*/
     width:50vw;
     min-height:90vh;
     height:auto;
@@ -275,6 +275,15 @@ legend{
 }
 
 
+.conBack{
+    background-color: rgb(122, 122, 48);
+    display:block;
+    width:60vw;
+    min-height:80vh;
+    height:auto;
+    margin:auto;
+    padding:0;
+}
 
 .content{
     background-color:rgb(68, 9, 92);
