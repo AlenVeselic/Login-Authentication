@@ -82,19 +82,7 @@ h3{
 }
 
 
-.main{
-    /*overflow:auto;*/
-    width:50vw;
-    min-height:90vh;
-    height:auto;
-    margin: auto;
-    background-color: rgb(155, 144, 124);
-}
 
-.back{
-    width:75vw;
-    background-color:rgb(155, 144, 124);
-}
 
 
 .triBase{
@@ -266,6 +254,20 @@ top:50px;
     top:50px;
     /*background-color: khaki;*/
 
+}
+
+.main{
+    /*overflow:auto;*/
+    width:70vw;
+    min-height:90vh;
+    height:auto;
+    margin: auto;
+    background-color: rgb(155, 144, 124);
+}
+
+.back{
+    width:75vw;
+    background-color:rgb(155, 144, 124);
 }
 
 legend{
