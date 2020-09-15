@@ -263,11 +263,16 @@ top:50px;
     height:auto;
     margin: auto;
     background-color: rgb(155, 144, 124);
+    background-image: url("img/img_UserLogo.png");
+    background-repeat: repeat;
 }
 
 .back{
     width:75vw;
-    background-color:rgb(155, 144, 124);
+    background-color:rgb(155, 144, 124) ;
+    background-image: url("img/txtr_brick01.png");
+    background-repeat: repeat;
+    
 }
 
 legend{
