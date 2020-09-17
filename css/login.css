@@ -262,15 +262,15 @@ top:50px;
     min-height:90vh;
     height:auto;
     margin: auto;
-    background-color: rgb(155, 144, 124);
-    background-image: url("img/img_UserLogo.png");
+    /*background-image:url("../img/txtr_brick01.png");*/
     background-repeat: repeat;
 }
 
 .back{
     width:75vw;
     background-color:rgb(155, 144, 124) ;
-    background-image: url("img/txtr_brick01.png");
+    background-image: url("../img/txtr_brick02.png");
+    background-size: 100px;
     background-repeat: repeat;
     
 }
@@ -285,7 +285,7 @@ legend{
 .conBack{
     background-color: rgb(122, 122, 48);
     display:block;
-    width:60vw;
+    width:52vw;
     min-height:80vh;
     height:auto;
     margin:auto;
@@ -322,6 +322,11 @@ form a{
     color:turquoise;
 }
 
+.triangles{
+    position: relative;
+    left:14.25%;
+}
+
 .b_tail{
     float:left;
     width: 0;
@@ -330,3 +335,18 @@ form a{
 	border-right: 8.334vw solid transparent;
 	border-top: 16.535vw solid rgb(68, 9, 92);
 }
+
+.triBack{
+    position:absolute;
+    left:23.75%;
+}
+
+.b_tail_bck{
+    float:left;
+    width: 0;
+	height: 0;
+    border-left:8vw solid transparent;
+    border-right:8vw solid transparent;
+    border-top:16vw solid rgb(122, 122, 48);
+}
+
