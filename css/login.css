@@ -257,7 +257,7 @@ top:50px;
 }
 
 .main{
-    /*overflow:auto;*/
+    overflow:auto;
     width:70vw;
     min-height:90vh;
     height:auto;
@@ -336,6 +336,15 @@ form a{
 	border-top: 16.535vw solid rgb(68, 9, 92);
 }
 
+.mT{
+    position:relative;
+    left:-15px;
+    border-left: 9vw solid transparent;
+	border-right: 9vw solid transparent;
+	border-top: 18vw solid rgb(68, 9, 92);
+
+}
+
 .triBack{
     position:absolute;
     left:23.75%;
@@ -343,10 +352,19 @@ form a{
 
 .b_tail_bck{
     float:left;
+    position:relative;
+    left:0px;
     width: 0;
 	height: 0;
-    border-left:8vw solid transparent;
-    border-right:8vw solid transparent;
-    border-top:16vw solid rgb(122, 122, 48);
+    border-left:9.3vw solid transparent;
+    border-right:9.3vw solid transparent;
+    border-top:18.6vw solid rgb(122, 122, 48);
+}
+
+.tB2{
+    left:-35px;
+}
+.tB3{
+    left:-72px;
 }
 
