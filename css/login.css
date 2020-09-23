@@ -294,6 +294,10 @@ legend{
 
 .content{
     background-color:rgb(68, 9, 92);
+    background-image:url("../img/txtr_stitches_01.png");
+    background-blend-mode:color-dodge;
+    background-size: 25px;
+    background-repeat: repeat;
     display:block;
     width:50vw;
     min-height:80vh;
@@ -329,21 +333,41 @@ form a{
 
 .b_tail{
     float:left;
+
+    
     width: 0;
 	height: 0;
-	border-left: 8.334vw solid transparent;
-	border-right: 8.334vw solid transparent;
-	border-top: 16.535vw solid rgb(68, 9, 92);
+	border-left: 0vw solid transparent;
+	border-right: 13vw solid transparent;
+    border-top: 24vw solid rgb(68, 9, 92);
+
+    border-image: url("../img/brdr_stitches_01.png") 10% round ;
+    
+    /*background-image:url("../img/txtr_stitches_01.png");
+    background-blend-mode:color-dodge;
+    background-size: 25px;
+    background-repeat: repeat;*/
+    
 }
+
 
 .mT{
     position:relative;
     left:-15px;
-    border-left: 9vw solid transparent;
-	border-right: 9vw solid transparent;
-	border-top: 18vw solid rgb(68, 9, 92);
+    border-left: 13vw solid transparent;
+	border-right: 13vw solid transparent;
+	border-top: 26vw solid rgb(68, 9, 92);
 
 }
+
+.b_tail:last-child{
+    position:relative;
+    left:-38px;
+    border-left: 13vw solid transparent;
+	border-right: 0vw solid transparent;
+	border-top: 24vw solid rgb(68, 9, 92);
+}
+
 
 .triBack{
     position:absolute;
@@ -356,15 +380,24 @@ form a{
     left:0px;
     width: 0;
 	height: 0;
-    border-left:9.3vw solid transparent;
-    border-right:9.3vw solid transparent;
-    border-top:18.6vw solid rgb(122, 122, 48);
+    border-left:0vw solid transparent;
+    border-right:15vw solid transparent;
+    border-top:26vw solid rgb(122, 122, 48);
 }
 
+
+
 .tB2{
-    left:-35px;
+    left:-55px;
+    border-left:14vw solid transparent;
+    border-right:14vw solid transparent;
+    border-top:28vw solid rgb(122, 122, 48);
 }
+
 .tB3{
-    left:-72px;
+    left:-115px;
+    border-left:15vw solid transparent;
+    border-right:0 solid transparent;
+    border-top:26vw solid rgb(122, 122, 48);
 }
 
