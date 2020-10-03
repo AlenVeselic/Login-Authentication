@@ -366,6 +366,33 @@ form a{
     background:url('../img/txtr_stitches_01.png') repeat;
     transform: rotate(-45deg);
   }
+
+  ||TRIANGLE TEST CODE||
+  
+  .triangle {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  clip: rect(100px, 250px, 500px, 100px);
+  transform: rotate(135deg);
+}
+
+.triangle::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background:url('http://www.fnordware.com/superpng/pnggrad8rgb.png');
+  transform: rotate(-120deg);
+}
+
+||TEST CODE END||
+
+
 */
 
 .mT{
