@@ -331,17 +331,23 @@ form a{
     left:14.25%;
 }
 
+.txtr{
+    background-image: url("../img/txtr_stitches_01.png");
+    overflow:hidden;
+}
+
 .b_tail{
     float:left;
 
     
     width: 0;
-	height: 0;
+    height: 0;
+    /*border-image: url("../img/brdr_stitches_02.png")  round ;*/
 	border-left: 0vw solid transparent;
 	border-right: 13vw solid transparent;
     border-top: 24vw solid rgb(68, 9, 92);
 
-    border-image: url("../img/brdr_stitches_01.png") 10% round ;
+    
     
     /*background-image:url("../img/txtr_stitches_01.png");
     background-blend-mode:color-dodge;
@@ -350,6 +356,17 @@ form a{
     
 }
 
+/*.b_tail::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background:url('../img/txtr_stitches_01.png') repeat;
+    transform: rotate(-45deg);
+  }
+*/
 
 .mT{
     position:relative;
